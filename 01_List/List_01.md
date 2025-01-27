@@ -29,6 +29,12 @@ void initList(SeqList* L)
 {
     L->length = 0;
 }
+
+int main()
+{
+    SeqList L;
+    initList(&L);
+}
 ```  
 **顺序表-在尾部添加元素**
 ```c
@@ -255,7 +261,7 @@ int insertNode(Node* L, int pos, ElemType e)
 ```c
 int deleteNode(Node* L, int pos)
 {
-    // 用删除节点的前驱
+    // 删除节点的前驱
     Node* p = L;
     int i = 0;
     // 遍历链表找到插入位置的前驱节点
